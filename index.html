@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Instagram-inspired gradient */
         .ig-gradient {
             background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
         }
@@ -16,28 +15,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .nav-link {
-            position: relative;
+        .github-btn {
+            background: linear-gradient(135deg, #333 0%, #555 100%);
+            transition: all 0.3s ease;
         }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C);
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        .mobile-menu {
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-        }
-        .mobile-menu.open {
-            transform: translateX(0);
+        .github-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -53,69 +37,6 @@
                     </div>
                     <span class="text-xl font-bold ig-text">DkEduGram</span>
                 </div>
-                
-                <!-- Desktop Navigation -->
-                <!-- <div class="hidden md:flex space-x-8"> -->
-                    <!-- <a href="#" class="nav-link text-gray-700 font-medium hover:text-purple-600 transition">Home</a> -->
-                    <!-- <a href="#" class="nav-link text-gray-700 font-medium hover:text-purple-600 transition">Courses</a>
-                    <a href="#" class="nav-link text-gray-700 font-medium hover:text-purple-600 transition">Explore</a>
-                    <a href="#" class="nav-link text-gray-700 font-medium hover:text-purple-600 transition">Library</a>
-                    <a href="#" class="nav-link text-gray-700 font-medium hover:text-purple-600 transition">Profile</a> -->
-                <!-- </div> -->
-                
-                <!-- Desktop Icons -->
-                <!-- <div class="hidden md:flex items-center space-x-6">
-                    <a href="#" class="text-gray-700 hover:text-purple-600 transition">
-                        <i class="fas fa-search text-lg"></i>
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-purple-600 transition">
-                        <i class="far fa-heart text-lg"></i>
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-purple-600 transition">
-                        <i class="far fa-user-circle text-lg"></i>
-                    </a>
-                </div> -->
-                
-                <!-- Mobile Menu Button -->
-                <!-- <button class="md:hidden text-gray-700" id="mobile-menu-button">
-                    <i class="fas fa-bars text-xl"></i>
-                </button> -->
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <!-- <div class="mobile-menu md:hidden bg-white absolute top-full left-0 w-full shadow-lg border-t" id="mobile-menu">
-            <div class="flex flex-col p-4 space-y-1">
-                <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                    <i class="fas fa-home w-5 text-center"></i>
-                    <span>Home</span>
-                </a> -->
-                <!-- <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                    <i class="fas fa-book-open w-5 text-center"></i>
-                    <span>Courses</span>
-                </a>
-                <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                    <i class="fas fa-compass w-5 text-center"></i>
-                    <span>Explore</span>
-                </a>
-                <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                    <i class="fas fa-bookmark w-5 text-center"></i>
-                    <span>Library</span>
-                </a>
-                <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                    <i class="fas fa-user w-5 text-center"></i>
-                    <span>Profile</span>
-                </a>
-                <div class="pt-4 mt-4 border-t border-gray-200 flex flex-col space-y-2">
-                    <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                        <i class="fas fa-cog w-5 text-center"></i>
-                        <span>Settings</span>
-                    </a>
-                    <a href="#" class="flex items-center space-x-3 text-gray-700 font-medium hover:bg-gray-50 transition py-3 px-4 rounded-lg">
-                        <i class="fas fa-sign-out-alt w-5 text-center"></i>
-                        <span>Log Out</span>
-                    </a>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -124,95 +45,101 @@
     <main class="container mx-auto px-4 py-8">
         <div class="max-w-lg mx-auto text-center">
             
-            
-            <div class="bg-white rounded-lg border p-6 mb-8">
-               
-
+            <!-- Play Area Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md mx-auto mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Play Area</h2>
                 
-                <!-- navigation start-->
-                 <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Play Area</h2>
-        
-        <ul class="space-y-3">
-            <!-- List 1 -->
-            <li>
-                <a href="arithmetic Quiz 1.html" class="flex items-center p-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
-                    <span class="text-blue-700 font-medium">Arithmetic Quiz</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="arithmetic Quiz 1.html" class="flex items-center p-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                            <span class="text-blue-700 font-medium">Arithmetic Quiz</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="memoryGame.html" class="flex items-center p-3 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
+                            <span class="text-green-700 font-medium">Memory Game</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="find the word 1.html" class="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200">
+                            <span class="text-purple-700 font-medium">Find the Word</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="cross words puzzle.html" class="flex items-center p-3 rounded-lg bg-yellow-50 hover:bg-yellow-100 transition-colors duration-200">
+                            <span class="text-yellow-700 font-medium">Cross Words Puzzle</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="true false 1.html" class="flex items-center p-3 rounded-lg bg-red-50 hover:bg-red-100 transition-colors duration-200">
+                            <span class="text-red-700 font-medium">True False Selection</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Multiple Choice 1.html" class="flex items-center p-3 rounded-lg bg-yellow-50 hover:bg-yellow-100 transition-colors duration-200">
+                            <span class="text-yellow-700 font-medium">Multiple Choice</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="fill in the blank 1.html" class="flex items-center p-3 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
+                            <span class="text-green-700 font-medium">Fill in the Blank</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="drag the words 1.html" class="flex items-center p-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
+                            <span class="text-blue-700 font-medium">Drag the Words</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Drag and Drop.html" class="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200">
+                            <span class="text-purple-700 font-medium">Drag and Drop</span>
+                            <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             
-            <!-- List 2 -->
-            <li>
-                <a href="memoryGame.html" class="flex items-center p-3 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
-                    <span class="text-green-700 font-medium">Memory Game</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
+            <!-- GitHub Repository Section -->
+            <div class="bg-white rounded-xl shadow-md p-6 border">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-github text-gray-800 text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">H5P Files</h2>
+                    <p class="text-gray-600">Access interactive content files</p>
+                </div>
+                
+                <!-- GitHub Button -->
+                <div class="mb-4">
+                    <button id="githubBtn" class="github-btn w-full py-4 rounded-xl text-white font-semibold shadow-lg flex items-center justify-center">
+                        <i class="fab fa-github mr-3"></i>
+                        Open GitHub Repository
+                    </button>
+                </div>
+                
+                <!-- Repository Info -->
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="text-sm text-gray-600">All H5P interactive content files are available in the GitHub repository.</p>
+                </div>
+            </div>
             
-            <!-- Additional list items with placeholders for href -->
-            <li>
-                <a href="find the word 1.html" class="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200">
-                    <span class="text-purple-700 font-medium">Find the Word</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="cross words puzzle.html" class="flex items-center p-3 rounded-lg bg-yellow-50 hover:bg-yellow-100 transition-colors duration-200">
-                    <span class="text-yellow-700 font-medium">Cross Words Puzzle</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="true false 1.html" class="flex items-center p-3 rounded-lg bg-red-50 hover:bg-red-100 transition-colors duration-200">
-                    <span class="text-red-700 font-medium">True False Selection</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="Multiple Choice 1.html" class="flex items-center p-3 rounded-lg bg-yellow-50 hover:bg-yellow-100 transition-colors duration-200">
-                    <span class="text-yellow-700 font-medium">Multiple Choice</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="fill in the blank 1.html" class="flex items-center p-3 rounded-lg bg-green-50 hover:bg-green-100 transition-colors duration-200">
-                    <span class="text-green-700 font-medium">Fill in the Blank</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="drag the words 1.html" class="flex items-center p-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-200">
-                    <span class="text-blue-700 font-medium">Drag the Words</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="Drag and Drop.html" class="flex items-center p-3 rounded-lg bg-purple-50 hover:bg-purple-100 transition-colors duration-200">
-                    <span class="text-purple-700 font-medium">Drag and Drop</span>
-                    <span class="ml-auto text-sm text-gray-500">Click to navigate</span>
-                </a>
-            </li>
-            
-            
-            
-            
-            
-            
-        </ul>
-        
-    </div>
-    <!-- navigation end -->
-    
-</div>
-            
-            <div class="text-sm text-gray-500">
+            <div class="text-sm text-gray-500 mt-8">
                 <p>Simple • Clean • Focused on Learning</p>
             </div>
         </div>
@@ -226,19 +153,23 @@
     </footer>
 
     <script>
-        // Mobile menu functionality
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
-                mobileMenu.classList.remove('open');
-            }
+        document.getElementById('githubBtn').addEventListener('click', function() {
+            const btn = this;
+            
+            // Change button state
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i> Opening...';
+            
+            // Open GitHub repository in a new tab
+            setTimeout(() => {
+                window.open('https://github.com/dhanu159/learningsup/tree/f96745a533346577cfbead0cf7b842171d66d028/trace', '_blank');
+                
+                // Reset button
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fab fa-github mr-3"></i> Open GitHub Repository';
+                }, 1000);
+            }, 500);
         });
     </script>
 </body>
